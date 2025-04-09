@@ -209,9 +209,19 @@ bool BowlingGame::Players::Player::isScoreValueValid(const uint8_t &throwValue)
     return true;
 }
 
-
 bool isValidFrameScore(uint8_t firstRoll, uint8_t secondRoll) {
     return (firstRoll <= 10 && secondRoll <= 10 && (firstRoll + secondRoll) <= 10);
 }
 
-
+/*
+*/
+void BowlingGame::Players::Player::run()
+{
+    std::cout<<"\n"<<playerName()<<" Game started...\n";
+    getThrowScore();
+    if (calculateFrameScore() == MAX_SCORE)
+    {
+        std::cout<<"\n Got maximum score!\n";
+    }
+    std::cout<<"\n"<<playerName()<<" Game Finished...\n";
+}
