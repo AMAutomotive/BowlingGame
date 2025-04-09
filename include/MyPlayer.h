@@ -45,7 +45,10 @@ namespace BowlingGame::Players
         //set the roll score for uint testing
         bool setthrowValue(const uint16_t &throwNumber, const uint16_t &frameIndex, const uint16_t &throwValue);
 
-
+        /*
+        start  game river method
+        */
+        void run();
 
 	};
 }
