@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "MyPlayer.h"
-#include "BowlingApp.h"
 #include <gtest/gtest.h>
 
 int main(int argc, char **argv)
@@ -11,9 +10,9 @@ int main(int argc, char **argv)
     /* uncommnet this line if you wnat to run the gtest */
     //::testing::InitGoogleTest(&argc, argv);
     std::cout << "Bowling Game!!!\n";
-    BowlingGame::App::BowlingApp bowlingAppObj;
+    BowlingGame::Players::Player bowlingAppObj;
     std::string player1_Name{"Tata Technolgies"} ;
-    if (bowlingAppObj.setPlayer(player1_Name))// Display name of player on console
+    if (bowlingAppObj.setPlayerName(player1_Name))// Display name of player on console
     {
         std::cout<<"\nPlayer "<<player1_Name<<" "<<" is playing bowling game"<<"\n";
     }
