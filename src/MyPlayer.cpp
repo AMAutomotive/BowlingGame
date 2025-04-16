@@ -1,4 +1,4 @@
-#include "MyPlayer.h"
+#include "../include/MyPlayer.h"
 
 /*
 */
